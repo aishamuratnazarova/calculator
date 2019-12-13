@@ -71,6 +71,21 @@ class FibonacciSequence:
             self.n -= 1
         return a
 
+class Round:
+    n = 1.0
+
+    def __init__(self, n):
+        self.n = n
+
+    def Floor(self):
+        return math.floor(self.n)
+
+    def Ceil(self):
+        return math.ceil(self.n)
+
+
+
+
 
 print("Select operation:")
 print("1:Add")
