@@ -58,6 +58,18 @@ class ProgrammerCalculator(Calculator):
         return self.num1 or self.num2
 
 
+class FibonacciSequence:
+    n = 1
+
+    def __init__(self, n):
+        self.n = n
+
+    def fib_recursive(self):
+        a, b = 0, 1
+        while self.n > 0:
+            a, b = b, a + b
+            self.n -= 1
+        return a
 
 
 print("Select operation:")
